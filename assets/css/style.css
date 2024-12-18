@@ -75,3 +75,34 @@ body{
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .get-started{
+        width: 400px;
+        height: 60px;
+        button{
+            font-size: 33px;
+        }
+    }
+    .container{
+        width: 90%;
+        padding: 20px;
+        .question{
+            padding: 10px;
+            font-size: 26px;
+        }
+        .answers{
+            div{
+                height: 60px;
+                padding-left: 20px;
+                line-height: 60px;
+            }
+        }
+        .apply{
+            .next{
+                height: 50px;
+                font-size: 25px;
+            }
+        }
+    }
+}
