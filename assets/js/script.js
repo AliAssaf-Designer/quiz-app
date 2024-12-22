@@ -10,7 +10,6 @@ let get_started = document.querySelector(".get-started");
 async function get_data(){
     let response = await fetch(url);
     let data = await response.json();
-    // console.log(data.results);
     
 
     get_started.addEventListener("click",()=>{
@@ -22,7 +21,7 @@ async function get_data(){
         };
         let sorted_first_answers = answer_of_first_question.sort();
         for (let i = 0; i < answer_of_first_question.length; i++) {
-            answer.innerHTML  += `<div>${sorted_first_answers[i]}</div>`;
+            answer.innerHTML  += `<div class="answer">${sorted_first_answers[i]}</div>`;
         };
         
         container.style.display = "block";
@@ -38,7 +37,7 @@ async function get_data(){
                     };
                     let sorted_answers = answer_of_question.sort();
                 for (let i = 0; i < sorted_answers.length; i++) {
-                    answer.innerHTML  += `<div>${sorted_answers[i]}</div>`;
+                    answer.innerHTML  += `<div class="answer">${sorted_answers[i]}</div>`;
                 }
             count++;
         });
