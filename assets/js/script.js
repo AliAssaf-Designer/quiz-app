@@ -1,5 +1,5 @@
 let doc = document;
-let url = "https://opentdb.com/api.php?amount=3";
+let url = "https://opentdb.com/api.php?amount=50";
 
 let container = doc.querySelector(".container");
 let get_started = doc.querySelector(".get-started");
