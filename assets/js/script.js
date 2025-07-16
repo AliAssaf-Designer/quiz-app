@@ -86,7 +86,7 @@ function false_answer(){
     container.innerHTML = "";
     container.innerHTML += `<h2 class="lose">You lose</h2>
                             <div class="get-started">
-                                <button class="start">Play Again!</button>
+                                <button class="start again">Play Again!</button>
                             </div>`;
     container.children[1].children[0].addEventListener("click", ()=>{
         container.innerHTML = "";

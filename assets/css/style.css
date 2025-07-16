@@ -150,8 +150,11 @@ body{
             }
         }
         .lose{
-            font-size: 100px;
+            font-size: 70px;
             line-height: 200px;
+        }
+        .again{
+            margin: 0;
         }
         .wins{
             font-size: 90px;
