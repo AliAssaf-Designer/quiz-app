@@ -18,7 +18,6 @@ next.innerHTML = "Next";
 async function get_data(){
     let response = await fetch(url);
     let questions = await response.json();
-    console.log(questions);
 
     get_started.addEventListener("click",()=>{
         fetch_questions(questions, the_question, next, answers);
