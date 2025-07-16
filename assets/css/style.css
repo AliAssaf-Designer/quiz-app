@@ -7,6 +7,7 @@ body{
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Arial";
 }
 .get-started{
     margin: 10px auto 0;
@@ -33,13 +34,14 @@ body{
 .container{
     display: none;
     width: 65%;
-    /* height: 100%; */
+    height: 65vh;
     background-color: #aeaeae;
     padding: 15px;
     margin: 100px auto 0;
     font-family: "ِArial";
     border-radius: 10px;
     opacity: 85%;
+    position: relative;
     .question{
         border-bottom: 2px solid black;
         padding: 5px;
@@ -63,7 +65,7 @@ body{
         justify-content: space-around;
         align-items: center;
         .next{
-            width: 100%;
+            width: 96.5%;
             height: 40px;
             border-radius: 10px;
             border: none;
@@ -72,11 +74,51 @@ body{
             color: white;
             font-size: 23px;
             margin: 10px 0;
+            position: absolute;
+            left: 15px;
+            bottom: 10px;
+        }
+    }
+    .lose{
+        color: red;
+        font-size: 165px;
+        text-align: center;
+        font-family: "Arial";
+        line-height: 300px;
+    }
+    .wins{
+        text-align: center;
+        position: relative;
+        font-size: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: green;
+        font-family: "Arial";
+        .play-again{
+            width: 30%;
+            height: 8vh;
+            font-size: 35px;
+            color: white;
+            background-color: #001731;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+        .play-again:hover{
+            background-color: #03488D;
+            width: 35%;
+            height: 10vh;
+            margin-left:  -15px;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
+    body{
+        background-size: 100% 150%;
+    }
     .get-started{
         width: 400px;
         height: 60px;
@@ -86,6 +128,7 @@ body{
     }
     .container{
         width: 90%;
+        height: 75vh;
         padding: 20px;
         .question{
             padding: 10px;
@@ -103,6 +146,10 @@ body{
                 height: 50px;
                 font-size: 25px;
             }
+        }
+        .lose{
+            font-size: 125px;
+            line-height: 250px;
         }
     }
 }
